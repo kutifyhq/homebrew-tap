@@ -5,24 +5,24 @@
 class Autifyctl < Formula
   desc "CLI tool for Autify API"
   homepage "https://github.com/kutifyhq/autifyctl"
-  version "0.0.2"
+  version "0.0.3"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kutifyhq/autifyctl/releases/download/v0.0.2/autifyctl_0.0.2_darwin_amd64.tar.gz"
-    sha256 "a42c542b88155a084250a0bd4ec8b9c3ba84a8dbcf55295ea5efa65f0b4e40bf"
+    url "https://github.com/kutifyhq/autifyctl/releases/download/v0.0.3/autifyctl_0.0.3_darwin_amd64.tar.gz"
+    sha256 "79ccc99febebf2c863ddd4767dd1998070419886aa9e11943848e98cd2972d9f"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kutifyhq/autifyctl/releases/download/v0.0.2/autifyctl_0.0.2_darwin_arm64.tar.gz"
-    sha256 "13e385be8aa67fe8b759b3a94e07462b384eb69f156132944d8a7f6b9e2bd848"
+    url "https://github.com/kutifyhq/autifyctl/releases/download/v0.0.3/autifyctl_0.0.3_darwin_arm64.tar.gz"
+    sha256 "7bd73184f72591c60314d9085da68bca0b3ee41f9c725b22d99a43de3dbca848"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kutifyhq/autifyctl/releases/download/v0.0.2/autifyctl_0.0.2_linux_amd64.tar.gz"
-    sha256 "259f97dc5a63944e5eee8539e1d77a130a18f44227ca2a1518ae8fdca2e25ccb"
+    url "https://github.com/kutifyhq/autifyctl/releases/download/v0.0.3/autifyctl_0.0.3_linux_amd64.tar.gz"
+    sha256 "2cc4ca27f8627a6127f917766267b6352b82415dde3255a81eab1a98a650ab3d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/kutifyhq/autifyctl/releases/download/v0.0.2/autifyctl_0.0.2_linux_arm64.tar.gz"
-    sha256 "8723d626d9ff167d4285a289114aeddb6eafd3d1f1572487b1e650c479bc689f"
+    url "https://github.com/kutifyhq/autifyctl/releases/download/v0.0.3/autifyctl_0.0.3_linux_arm64.tar.gz"
+    sha256 "3d6250efdeb2caf28fed0593913d20ffaf512d19f87909e2c93199c6d4a077dd"
   end
 
   def install
